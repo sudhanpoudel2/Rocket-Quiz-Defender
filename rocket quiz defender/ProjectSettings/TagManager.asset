@@ -21,7 +21,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - front
   - 
   - 
   - 
@@ -71,4 +71,10 @@ TagManager:
     locked: 0
   - name: VFX
     uniqueID: 738997965
+    locked: 0
+  - name: Foreground
+    uniqueID: 296252495
+    locked: 0
+  - name: Midground
+    uniqueID: 1252080829
     locked: 0
