@@ -18,6 +18,7 @@ public class EnemySpawner : MonoBehaviour
     void Update()
     {
 
+
     }
 
 
@@ -50,4 +51,5 @@ public class EnemySpawner : MonoBehaviour
         if (maxSpawnRateInSeconds == 1f)
             CancelInvoke("IncreaseSpawnRate");
     }
+    
 }
