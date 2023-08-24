@@ -18,9 +18,14 @@ public class Bulletrefill : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Hello");
+
         if (collision.CompareTag("Rocket"))
         {
-            collision.GetComponent<PlayerMovement>().bulletAmount= bulletFill;
+            collision.GetComponent<PlayerMovement>().bulletAmount = bulletFill;
+            Destroy(collision.gameObject);
         }
+       
     }
+
 }

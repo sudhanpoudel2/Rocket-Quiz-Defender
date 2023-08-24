@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1842448580091258286}
   - component: {fileID: 4485867474116683687}
-  - component: {fileID: 5492216610871736212}
   - component: {fileID: 3346377588510600153}
   - component: {fileID: 6420342809536774564}
+  - component: {fileID: 1611906558279580009}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: enemy
@@ -88,18 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5492216610871736212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513003506614426495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4ca4cbf77c20241b9cac5ce851a62b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &3346377588510600153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -167,6 +155,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1611906558279580009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513003506614426495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d77c60b52d21c43bcddcc6dd96c7fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyBullet: {fileID: 6261695994541152199, guid: 9ed6ccddc5881a649a4934fdfdc1a949,
+    type: 3}
+  ePoint: {fileID: 4552309240424614402}
 --- !u!1 &8769122683464883218
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +179,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4552309240424614402}
-  - component: {fileID: 7365697602087003830}
   m_Layer: 0
   m_Name: EnemyFirePoint
   m_TagString: Untagged
@@ -199,17 +201,3 @@ Transform:
   m_Father: {fileID: 1842448580091258286}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7365697602087003830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8769122683464883218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1312a45e6ec6ef6408e0b961b3b8facb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyBullet: {fileID: 6261695994541152199, guid: 9ed6ccddc5881a649a4934fdfdc1a949,
-    type: 3}
